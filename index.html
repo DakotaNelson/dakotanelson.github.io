@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
 <!--
-	Miniport 2.5 by HTML5 UP
+	Modified from Miniport 2.5 by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html ng-app="portfolioApp">
 	<head>
 		<title>Dakota Nelson</title>
 		<link rel="shortcut icon" href="./images/favicon.png">
@@ -15,6 +15,10 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/config.js"></script>
 		<script src="js/skel.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/portfolio.js"></script>
+
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -24,142 +28,11 @@
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 		<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
 	</head>
+
+
 	<body>
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">Top</a></li>
-					<li><a href="#work">Work</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
-
-		<!-- Home -->
-			<div class="wrapper wrapper-style1 wrapper-first">
-				<article class="container" id="top">
-					<div class="row">
-						<div class="4u">
-							<span class="me image image-full"><img src="images/me.jpg" alt="Photo of Dakota" /></span>
-						</div>
-						<div class="8u">
-							<header>
-								<h1>Hi. I'm <strong>Dakota Nelson</strong>.</h1>
-							</header>
-							<p>Developer. Designer. Engineer. Learner.</p>
-							<p>Because the world is too big to not try everything.</p>
-              <!--<a href="#work" class="button button-big">Learn about what I do &raquo;</a>-->
-						</div>
-					</div>
-				</article>
-			</div>
-
-		<!-- Work -->
-			<div class="wrapper wrapper-style2">
-				<article id="work">
-					<header>
-						<h2>I design and build wonderful things...</h2>
-						<span>Because really, what else am I going to do with all this free time?</span>
-					</header>
-					<div class="container">
-						<div class="row">
-							<div class="4u">
-								<section class="box box-style1">
-									<span class="fa featured fa-gears"></span>
-									<h3>Robots!</h3>
-									<p>Robots are the future. Wings, rotors, or wheels, I've worked on them - and loved every second of it.</p>
-								</section>
-							</div>
-							<div class="4u">
-								<section class="box box-style1">
-									<span class="fa featured fa-warning"></span>
-									<h3>Security!</h3>
-									<p>Someone's got to do it. Besides - having an adversary to work against makes life so much more interesting.</p>
-								</section>
-							</div>
-							<div class="4u">
-								<section class="box box-style1">
-									<span class="fa featured fa-rocket"></span>
-									<h3>Space!</h3>
-									<p>Humanity belongs in space,<br> and I want to help us get there.<br>(And hopefully go along.)</p>
-								</section>
-							</div>
-						</div>
-					</div>
-					<footer>
-						<!--<p>Want to get more information?</p>
-            <a href="#portfolio" class="button button-big">See some of what I've done&raquo;</a>-->
-					</footer>
-				</article>
-			</div>
-
-		<!-- Portfolio -->
-			<div class="wrapper wrapper-style3">
-				<article id="portfolio">
-					<header>
-						<h2>... for a lot of different people.</h2>
-						<span>Two-person web startups to defense contractors that employ thousands.</span>
-					</header>
-					<div class="container">
-						<div class="row">
-							<div class="12u">
-							</div>
-						</div>
-						<div class="row">
-							<div class="4u">
-								<article class="box box-style2">
-									<a href="http://www.olin.edu/" class="image image-full"><img src="images/olin_logo.jpg" alt="" /></a>
-									<h3><a href="http://www.olin.edu/">Olin College</a></h3>
-									<p>Building the future and learning about math, one cup of coffee at a time.</p>
-								</article>
-							</div>
-							<div class="4u">
-								<article class="box box-style2">
-									<a href="https://www.proximate.com" class="image image-full"><img src="images/Proximate_Logo.png" alt="Proximate" /></a>
-									<h3><a href="https://www.proximate.com">Proximate</a></h3>
-									<p>Two weeks. No prior webdev experience. Why not?</p>
-								</article>
-							</div>
-							<div class="4u">
-								<article class="box box-style2">
-									<a href="http://www.sandia.gov/" class="image image-full"><img src="images/sandia_logo.jpg" alt="Sandia National Laboratories" /></a>
-									<h3><a href="http://www.sandia.gov/">Sandia National Labs</a></h3>
-									<p>In today's world it takes more than guns to protect a country.</p>
-								</article>
-							</div>
-						</div>
-						<div class="row">
-							<div class="4u">
-								<article class="box box-style2">
-									<a href="http://www.stresearch.com/" class="image image-full"><img src="images/STR_logo.jpg" alt="Systems and Technology Research" /></a>
-									<h3><a href="http://www.stresearch.com/">STR</a></h3>
-									<p>Systems and Technology Research: Defeating the enemy, with science!</p>
-								</article>
-							</div>
-							<div class="4u">
-								<article class="box box-style2">
-									<a href="http://www.wpafb.af.mil/AFRL/" class="image image-full"><img src="images/Afrl_logo.jpg" alt="Air Force Research Laboratory" /></a>
-									<h3><a href="http://www.wpafb.af.mil/AFRL/">Air Force Research Lab</a></h3>
-                  <p>Designing satellites for the Air Force is a fantastic
-                  way to spend a summer.</p>
-								</article>
-							</div>
-							<div class="4u">
-								<article class="box box-style2">
-									<a href="http://www.sdsmt.edu/" class="image image-full"><img src="images/SDSMT_Logo.jpg" alt="South Dakota School of Mines and Technology" /></a>
-									<h3><a href="http://www.sdsmt.edu/">SDSM&T Robotics</a></h3>
-									<p>Building better 'bots using the Robot Operating System.</p>
-								</article>
-							</div>
-						</div>
-					</div>
-					<footer>
-						<!--<p>For more details, click the big blue button:</p>
-            <a href="#contact" class="button button-big">Get in touch &raquo;</a>-->
-					</footer>
-				</article>
-			</div>
+  <div ng-view></div>
 
 		<!-- Contact -->
 			<div class="wrapper wrapper-style4">
@@ -212,7 +85,5 @@
 					</footer>
 				</article>
 			</div>
-
-
 	</body>
 </html>
