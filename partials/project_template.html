@@ -1,0 +1,62 @@
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">Top</a></li>
+					<li><a href="#description">Description</a></li>
+					<li><a href="#photos">Photos</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+		<!-- Home -->
+			<div class="wrapper wrapper-style1 wrapper-first">
+				<article class="container" id="top">
+					<div class="row">
+						<div class="4u">
+              <span class="image image-left"><img ng-src={{project.title_photo}} alt="Project title photo." /></span>
+						</div>
+						<div class="8u">
+							<header>
+                <h1>{{project.title}}</h1>
+							</header>
+              <p>{{project.tagline}}</p>
+						</div>
+					</div>
+				</article>
+			</div>
+
+		<!-- Description -->
+			<div class="wrapper wrapper-style2">
+				<article id="description">
+					<header>
+            <h2>{{project.subtitle}}</h2>
+					</header>
+					<div class="container">
+						<div class="row">
+              <div class="12u">
+                {{project.description}}
+              </div>
+						</div>
+					</div>
+					<footer>
+					</footer>
+				</article>
+			</div>
+
+		<!-- Photos -->
+			<div class="wrapper wrapper-style3">
+				<article id="photos">
+					<header>
+						<h2>Photos</h2>
+					</header>
+					<div class="container">
+            <div class="row">
+              <div class="3u image" ng-repeat="photo in project.photos">
+                {{photo}}
+              </div>
+            </div>
+					</div>
+					<footer>
+					</footer>
+				</article>
+			</div>
