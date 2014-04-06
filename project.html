@@ -4,7 +4,7 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html ng-app="portfolioApp">
 	<head>
 		<title>Dakota Nelson</title>
 		<link rel="shortcut icon" href="./images/favicon.png">
@@ -15,6 +15,9 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/config.js"></script>
 		<script src="js/skel.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/portfolio.js"></script>
+
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -24,7 +27,9 @@
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 		<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
 	</head>
-	<body>
+
+
+	<body ng-controller="ProjectCtrl">
 
 		<!-- Nav -->
 			<nav id="nav">
@@ -41,13 +46,13 @@
 				<article class="container" id="top">
 					<div class="row">
 						<div class="4u">
-							<span class="image image-left"><img src="images/me.jpg" alt="Photo of Dakota" /></span>
+              <span class="image image-left"><img src={{project.title_photo}} alt="Project title photo." /></span>
 						</div>
 						<div class="8u">
 							<header>
-								<h1>Project Title</h1>
+                <h1>{{project.title}}</h1>
 							</header>
-              <p>A brief tagline for the project.</p>
+              <p>{{project.tagline}}</p>
 						</div>
 					</div>
 				</article>
@@ -57,13 +62,13 @@
 			<div class="wrapper wrapper-style2">
 				<article id="description">
 					<header>
-						<h2>More title words.</h2>
+            <h2>{{project.subtitle}}</h2>
 					</header>
 					<div class="container">
 						<div class="row">
-							<div class="4u">
-                <p> A bunch of words go here.</p>
-							</div>
+              <div class="12u">
+                {{project.description}}
+              </div>
 						</div>
 					</div>
 					<footer>
@@ -79,17 +84,8 @@
 					</header>
 					<div class="container">
             <div class="row">
-              <div class="3u">
-                Pictures will go here.
-              </div>
-              <div class="3u">
-                And here.
-              </div>
-              <div class="3u">
-                And here...
-              </div>
-              <div class="3u">
-                Aaaaand here.
+              <div class="3u image" ng-repeat="photo in project.photos">
+                {{photo}}
               </div>
             </div>
 					</div>
