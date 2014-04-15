@@ -44,6 +44,28 @@
     }
   ]);
 
-  portfolioControllers.controller('IndexCtrl', [function($scope) {}]);
+  portfolioControllers.controller('IndexCtrl', [
+    '$scope', '$http', function($scope, $http) {
+      $http.get('projects/projects.json').success(function(data) {
+        var project, row, _i, _len, _ref, _results;
+        $scope.projects = data;
+        _ref = $scope.projects;
+        _results = [];
+        for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+          row = _ref[_i];
+          _results.push((function() {
+            var _j, _len1, _results1;
+            _results1 = [];
+            for (_j = 0, _len1 = row.length; _j < _len1; _j++) {
+              project = row[_j];
+              _results1.push(project.thumb = 'projects/' + project.id + '/thumb.jpg');
+            }
+            return _results1;
+          })());
+        }
+        return _results;
+      });
+    }
+  ]);
 
 }).call(this);

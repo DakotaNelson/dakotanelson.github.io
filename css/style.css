@@ -21,6 +21,11 @@
 		box-sizing: border-box;
 	}
 
+  .vspace
+  {
+    margin-bottom:20px;
+  }
+
 	body, input, textarea
 	{
 		font-family: 'Open Sans', sans-serif;

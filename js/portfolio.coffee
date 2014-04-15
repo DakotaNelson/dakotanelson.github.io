@@ -27,5 +27,12 @@ portfolioControllers.controller('ProjectCtrl', ['$scope','$http','$routeParams',
   )]
 )
 
-portfolioControllers.controller('IndexCtrl',[($scope)->
+portfolioControllers.controller('IndexCtrl',['$scope','$http',($scope,$http)->
+  $http.get('projects/projects.json').success((data)->
+    $scope.projects = data # NOTE: data must be an array consisting of subarrays of three projects each. Manually formatted because I'm lazy.
+    for row in $scope.projects
+      for project in row
+        project.thumb = 'projects/'+project.id+'/thumb.jpg'
+        # Nested for loops are how you know you're doing it right.
+  )
   return])

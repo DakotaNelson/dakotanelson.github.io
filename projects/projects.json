@@ -1,0 +1,8 @@
+[
+  [{"id":"test-project","title":"Test Project","teaser":"test teaser"},
+  {"id":"some-project","title":"Some Project","teaser":"exciting teaser"},
+  {"id":"test-project","title":"Test Project","teaser":"test teaser"}],
+
+  [{"id":"test-project","title":"Test Project","teaser":"test teaser"},
+  {"id":"other-project","title":"Other Project","teaser":"more teaser"}]
+]
