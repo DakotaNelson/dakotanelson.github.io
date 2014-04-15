@@ -2,7 +2,7 @@
 (function() {
   var portfolioApp, portfolioControllers;
 
-  portfolioApp = angular.module('portfolioApp', ['ngRoute', 'portfolioControllers']);
+  portfolioApp = angular.module('portfolioApp', ['smoothScroll', 'ngRoute', 'portfolioControllers']);
 
   /* App Module*/
 
@@ -21,6 +21,15 @@
     }
   ]);
 
+  /*portfolioApp.run(['$location','$anchorScroll','$routeParams'($scope, $location, $anchorScroll, $routeParams) ->
+    $scope.$on('$routeChangeSuccess', (newRoute,oldRoute) ->
+      $location.hash($routeParams.scrollTo)
+      $anchorScroll()
+    )
+  ])
+  */
+
+
   /* Controllers*/
 
 
@@ -29,8 +38,7 @@
   portfolioControllers.controller('ProjectCtrl', [
     '$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
       $scope.projectid = $routeParams.projectid;
-      console.log($scope.projectid);
-      return $http.get('projects/projects.json').success(function(data) {
+      return $http.get('projects/' + $routeParams.projectid + '/' + $routeParams.projectid + '.json').success(function(data) {
         return $scope.project = data;
       });
     }
