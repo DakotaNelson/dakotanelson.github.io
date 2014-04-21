@@ -1,0 +1,9 @@
+{
+  "id": "this-site",
+  "title": "This Website",
+  "title_photo": "projects/this-site/thumb.jpg",
+  "tagline": "This very website.",
+  "subtitle": "A second title.",
+  "description": "A bunch of words about the project.",
+  "photos": ["Coming soon.","There will be more.","And they will be good.","And whatnot."]
+}

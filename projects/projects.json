@@ -1,6 +1,6 @@
 [
   [{"id":"test-project","title":"Test Project","teaser":"test teaser"},
-  {"id":"some-project","title":"Some Project","teaser":"exciting teaser"},
+  {"id":"this-site","title":"This Website","teaser":"My first experience with AngularJS."},
   {"id":"test-project","title":"Test Project","teaser":"test teaser"}],
 
   [{"id":"test-project","title":"Test Project","teaser":"test teaser"},
