@@ -1,8 +1,5 @@
 [
-  [{"id":"proximate","title":"Proximate Relation Timeline","teaser":"Nine days, no webdev experience - why not?"},
-  {"id":"this-site","title":"This Website","teaser":"My first experience with AngularJS."},
-  {"id":"test-project","title":"Test Project","teaser":"test teaser"}],
-
-  [{"id":"test-project","title":"Test Project","teaser":"test teaser"},
-  {"id":"other-project","title":"Other Project","teaser":"more teaser"}]
+  [{"id":"proximate","title":"Proximate","teaser":"Nine days and no prior webdev experience - why not?"},
+  {"id":"this-site","title":"This Website","teaser":"My first experience with AngularJS, and I'm already hooked."},
+  {"id":"space-gun","title":"Space Gun!","teaser":"What could be more awesome than a giant gun to shoot satellites into space?"}]
 ]
