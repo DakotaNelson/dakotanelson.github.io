@@ -2,8 +2,8 @@
   "id": "space-gun",
   "title": "Space Gun",
   "title_photo": "projects/space-gun/title_photo.jpg",
-  "tagline": "Tagline.",
-  "subtitle": "Subtitle.",
-  "description": "A bunch of words about the project.",
+  "tagline": "If you can't build a space gun, the least you can do is simulate it.",
+  "subtitle": "Space. Explosions. What more could you want?",
+  "description": "As part of a class in modeling and simulation, a partner and I had a chance to model a system of our choosing. Obviously, the best choice was a space gun. After doing some math and writing some code, we made a very pretty poster which you can find in the images below. Long story short: space guns are not only awesome, but possible. (More or less.)",
   "photos": ["Coming soon.","There will be more.","And they will be good.","And whatnot."]
 }
