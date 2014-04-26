@@ -1,5 +1,27 @@
 portfolioApp = angular.module('portfolioApp',['smoothScroll','ngRoute','portfolioControllers'])
 
+
+### Directives ###
+
+portfolioApp.directive('dnShadowbox', ->
+  return {
+    template: '<a ng-click="openShadowbox()"><img ng-src="{{imageUrl}}"></a>',
+    scope: {
+      imageName: '@name',
+      imageUrl: '@url'
+    },
+    link: (scope,element,attrs) ->
+      scope.openShadowbox = () ->
+        Shadowbox.open({
+          content: @imageUrl,
+          player: 'img',
+          gallery: 'Project'
+          title: @imageName
+        })
+  }
+)
+
+
 ### App Module ###
 
 portfolioApp.config(['$routeProvider', ($routeProvider)->
@@ -8,24 +30,18 @@ portfolioApp.config(['$routeProvider', ($routeProvider)->
     .when('/index', {templateUrl: '/partials/index_template.html', controller: 'IndexCtrl'})
     .otherwise({redirectTo: '/index'})])
 
-###portfolioApp.run(['$location','$anchorScroll','$routeParams'($scope, $location, $anchorScroll, $routeParams) ->
-  $scope.$on('$routeChangeSuccess', (newRoute,oldRoute) ->
-    $location.hash($routeParams.scrollTo)
-    $anchorScroll()
-  )
-])###
-
 
 ### Controllers ###
 
 portfolioControllers = angular.module('portfolioControllers',[])
 
 portfolioControllers.controller('ProjectCtrl', ['$scope','$http','$routeParams', ($scope,$http,$routeParams) ->
+  Shadowbox.init()
   $scope.projectid = $routeParams.projectid
   $http.get('projects/'+$routeParams.projectid+'/'+$routeParams.projectid+'.json').success((data) ->
     $scope.project = data
-  )]
-)
+  )
+])
 
 portfolioControllers.controller('IndexCtrl',['$scope','$http',($scope,$http)->
   $http.get('projects/projects.json').success((data)->

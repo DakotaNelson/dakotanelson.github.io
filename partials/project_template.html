@@ -52,7 +52,7 @@
 					<div class="container">
             <div class="row">
               <div class="3u image" ng-repeat="photo in project.photos">
-                {{photo}}
+                <a dn-shadowbox name="{{photo}}" url="projects/{{project.id}}/{{photo}}"></a>
               </div>
             </div>
 					</div>

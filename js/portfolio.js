@@ -4,6 +4,29 @@
 
   portfolioApp = angular.module('portfolioApp', ['smoothScroll', 'ngRoute', 'portfolioControllers']);
 
+  /* Directives*/
+
+
+  portfolioApp.directive('dnShadowbox', function() {
+    return {
+      template: '<a ng-click="openShadowbox()"><img ng-src="{{imageUrl}}"></a>',
+      scope: {
+        imageName: '@name',
+        imageUrl: '@url'
+      },
+      link: function(scope, element, attrs) {
+        return scope.openShadowbox = function() {
+          return Shadowbox.open({
+            content: this.imageUrl,
+            player: 'img',
+            gallery: 'Project',
+            title: this.imageName
+          });
+        };
+      }
+    };
+  });
+
   /* App Module*/
 
 
@@ -21,15 +44,6 @@
     }
   ]);
 
-  /*portfolioApp.run(['$location','$anchorScroll','$routeParams'($scope, $location, $anchorScroll, $routeParams) ->
-    $scope.$on('$routeChangeSuccess', (newRoute,oldRoute) ->
-      $location.hash($routeParams.scrollTo)
-      $anchorScroll()
-    )
-  ])
-  */
-
-
   /* Controllers*/
 
 
@@ -37,6 +51,7 @@
 
   portfolioControllers.controller('ProjectCtrl', [
     '$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+      Shadowbox.init();
       $scope.projectid = $routeParams.projectid;
       return $http.get('projects/' + $routeParams.projectid + '/' + $routeParams.projectid + '.json').success(function(data) {
         return $scope.project = data;
