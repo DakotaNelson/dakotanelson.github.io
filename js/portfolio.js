@@ -50,11 +50,12 @@
   portfolioControllers = angular.module('portfolioControllers', []);
 
   portfolioControllers.controller('ProjectCtrl', [
-    '$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+    '$sce', '$scope', '$http', '$routeParams', function($sce, $scope, $http, $routeParams) {
       Shadowbox.init();
       $scope.projectid = $routeParams.projectid;
       return $http.get('projects/' + $routeParams.projectid + '/' + $routeParams.projectid + '.json').success(function(data) {
-        return $scope.project = data;
+        $scope.project = data;
+        return $scope.project.description = $sce.trustAsHtml($scope.project.description);
       });
     }
   ]);

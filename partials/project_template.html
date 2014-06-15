@@ -2,8 +2,8 @@
 			<nav id="nav">
 				<ul class="container">
 					<li><a href="#" scroll-to="top">Top</a></li>
-					<li><a href="#" scroll-to="description">Description</a></li>
-					<li><a href="#" scroll-to="photos">Photos</a></li>
+					<li><a href="#" scroll-to="description">Portfolio</a></li>
+					<li><a href="#" scroll-to="photos">Experience</a></li>
 					<li><a href="#" scroll-to="contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -34,7 +34,7 @@
 					<div class="container">
 						<div class="row">
               <div class="12u">
-                {{project.description}}
+                <span ng-bind-html=project.description>
               </div>
 						</div>
 					</div>

@@ -1,5 +1,6 @@
 [
   [{"id":"proximate","title":"Proximate","teaser":"Nine days and no prior webdev experience - why not?"},
   {"id":"this-site","title":"This Website","teaser":"My first experience with AngularJS, and I'm already hooked."},
-  {"id":"space-gun","title":"Space Gun!","teaser":"What could be more awesome than a giant gun to shoot satellites into space?"}]
+  {"id":"tracer-fire","title":"Tracer FIRE","teaser":"A chance to help train future computer forensics experts."}],
+  [{"id":"space-gun","title":"Space Gun!","teaser":"What could be more awesome than a giant gun to shoot satellites into space?"}]
 ]

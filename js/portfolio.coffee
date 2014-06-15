@@ -35,11 +35,13 @@ portfolioApp.config(['$routeProvider', ($routeProvider)->
 
 portfolioControllers = angular.module('portfolioControllers',[])
 
-portfolioControllers.controller('ProjectCtrl', ['$scope','$http','$routeParams', ($scope,$http,$routeParams) ->
+portfolioControllers.controller('ProjectCtrl', ['$sce','$scope','$http','$routeParams', ($sce,$scope,$http,$routeParams) ->
   Shadowbox.init()
   $scope.projectid = $routeParams.projectid
   $http.get('projects/'+$routeParams.projectid+'/'+$routeParams.projectid+'.json').success((data) ->
     $scope.project = data
+    $scope.project.description = $sce.trustAsHtml($scope.project.description)
+    # If it's possible to inject JSON, this is now a vulnerability.
   )
 ])
 
