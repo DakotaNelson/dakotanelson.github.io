@@ -5,7 +5,7 @@ portfolioApp = angular.module('portfolioApp',['smoothScroll','ngRoute','portfoli
 
 portfolioApp.directive('dnShadowbox', ->
   return {
-    template: '<a ng-click="openShadowbox()"><img ng-src="{{imageUrl}}"></a>',
+    template: '<a ng-click="openShadowbox()"><div class="thumbnail"><img ng-src="{{imageUrl}}"></div></a>',
     scope: {
       imageName: '@name',
       imageUrl: '@url'

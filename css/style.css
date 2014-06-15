@@ -26,6 +26,18 @@
     margin-bottom:20px;
   }
 
+  .thumbnail
+  {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .thumbnail img
+  {
+    width: 100%;
+  }
+
 	body, input, textarea
 	{
 		font-family: 'Open Sans', sans-serif;
