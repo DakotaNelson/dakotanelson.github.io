@@ -2,8 +2,8 @@
 			<nav id="nav">
 				<ul class="container">
 					<li><a href="#" scroll-to="top">Top</a></li>
-					<li><a href="#" scroll-to="description">Portfolio</a></li>
-					<li><a href="#" scroll-to="photos">Experience</a></li>
+					<li><a href="#" scroll-to="description">Description</a></li>
+					<li ng-if="project.hasPhotos"><a href="#" scroll-to="photos">Photos</a></li>
 					<li><a href="#" scroll-to="contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -44,7 +44,7 @@
 			</div>
 
 		<!-- Photos -->
-			<div id="photos" class="wrapper wrapper-style3">
+			<div ng-if="project.hasPhotos" id="photos" class="wrapper wrapper-style3">
 				<article>
 					<header>
 						<h2>Photos</h2>

@@ -51,11 +51,16 @@
 
   portfolioControllers.controller('ProjectCtrl', [
     '$sce', '$scope', '$http', '$routeParams', function($sce, $scope, $http, $routeParams) {
-      Shadowbox.init();
       $scope.projectid = $routeParams.projectid;
-      return $http.get('projects/' + $routeParams.projectid + '/' + $routeParams.projectid + '.json').success(function(data) {
+      $http.get('projects/' + $routeParams.projectid + '/' + $routeParams.projectid + '.json').success(function(data) {
         $scope.project = data;
+        console.log(data);
+        $scope.project.hasPhotos = data.photos.length > 0 ? true : false;
         return $scope.project.description = $sce.trustAsHtml($scope.project.description);
+      });
+      return ga('send', 'pageview', {
+        'page': '/projects/' + $routeParams.projectid,
+        'title': $routeParams.projectid
       });
     }
   ]);
@@ -80,6 +85,10 @@
           })());
         }
         return _results;
+      });
+      ga('send', 'pageview', {
+        'page': '/index.html',
+        'title': 'index'
       });
     }
   ]);

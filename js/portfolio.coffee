@@ -36,13 +36,19 @@ portfolioApp.config(['$routeProvider', ($routeProvider)->
 portfolioControllers = angular.module('portfolioControllers',[])
 
 portfolioControllers.controller('ProjectCtrl', ['$sce','$scope','$http','$routeParams', ($sce,$scope,$http,$routeParams) ->
-  Shadowbox.init()
+  #Shadowbox.init() # this is done in index.html
   $scope.projectid = $routeParams.projectid
   $http.get('projects/'+$routeParams.projectid+'/'+$routeParams.projectid+'.json').success((data) ->
     $scope.project = data
+    console.log(data)
+    $scope.project.hasPhotos = if data.photos.length > 0 then true else false
     $scope.project.description = $sce.trustAsHtml($scope.project.description)
     # If it's possible to inject JSON, this is now a vulnerability.
   )
+  ga('send','pageview', {
+    'page': '/projects/'+$routeParams.projectid,
+    'title': $routeParams.projectid
+  })
 ])
 
 portfolioControllers.controller('IndexCtrl',['$scope','$http',($scope,$http)->
@@ -53,4 +59,8 @@ portfolioControllers.controller('IndexCtrl',['$scope','$http',($scope,$http)->
         project.thumb = 'projects/'+project.id+'/thumb.jpg'
         # Nested for loops are how you know you're doing it right.
   )
+  ga('send','pageview', {
+    'page': '/index.html'
+    'title': 'index'
+  })
   return])
