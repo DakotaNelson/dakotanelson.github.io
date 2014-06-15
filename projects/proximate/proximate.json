@@ -4,6 +4,6 @@
   "title_photo": "projects/proximate/thumb.jpg",
   "tagline": "Two weeks of living and breathing the startup life.",
   "subtitle": "The best way to spend winter break.",
-  "description": "A month of winter break is far too long. To alleviate my boredom, I spent a little under two weeks working for a two-person web startup in Cambridge. Living with the two founders and learning web development, I picked up new technologies at a breakneck pace. Nine days after I started, I deployed a new feature for their webapp - an interactive chart in D3.js (using a Backbone.js framework) that pulls data from a Ruby backend, does some cleaning, and shows the user <i>when</i> new relationships were formed, in addition to a pre-existing networking graph showing who is connected to whom. If you're curious enough, head on over to <a href=https://www.proximate.com>www.proximate.com</a> and take a look around.",
-  "photos": ["Coming soon.","There will be more.","And they will be good.","And whatnot."]
+  "description": "A month of winter break is far too long. To alleviate my boredom, I spent a little under two weeks working for a two-person web startup in Cambridge. Living with the two founders and learning web development, I picked up new technologies at a breakneck pace. Nine days after I started, I deployed a new feature for their webapp - an interactive chart in D3.js (using a Backbone.js framework) that pulls data from a Ruby backend, does some cleaning, and shows the user when new relationships were formed, in addition to a pre-existing networking graph showing who is connected to whom. If you're curious, head on over to <a href=https://www.proximate.com>www.proximate.com</a> and take a look around.",
+  "photos": []
 }
