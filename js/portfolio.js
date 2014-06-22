@@ -9,20 +9,29 @@
 
   portfolioApp.directive('dnShadowbox', function() {
     return {
-      template: '<a ng-click="openShadowbox()"><div class="thumbnail"><img ng-src="{{imageUrl}}"></div></a>',
+      restrict: "E",
+      template: '<a href="{{imageUrl}}" rel="shadowbox[Project]"><dn-thumb></dn-thumb></a>',
       scope: {
         imageName: '@name',
         imageUrl: '@url'
-      },
+      }
+    };
+  });
+
+  portfolioApp.directive('dnThumb', function() {
+    return {
+      restrict: 'E',
+      template: '<div class="thumbnail"><img ng-src="{{imageUrl}}"></div>',
+      scope: false,
       link: function(scope, element, attrs) {
-        return scope.openShadowbox = function() {
-          return Shadowbox.open({
-            content: this.imageUrl,
-            player: 'img',
-            gallery: 'Project',
-            title: this.imageName
-          });
-        };
+        var div, img;
+        div = element.children();
+        img = element.children().children();
+        return img.on('load', function() {
+          var heightDiff;
+          heightDiff = img.height() - div.height();
+          return img.css('margin-top', -heightDiff / 2);
+        });
       }
     };
   });
@@ -54,10 +63,11 @@
       $scope.projectid = $routeParams.projectid;
       $http.get('projects/' + $routeParams.projectid + '/' + $routeParams.projectid + '.json').success(function(data) {
         $scope.project = data;
-        console.log(data);
         $scope.project.hasPhotos = data.photos.length > 0 ? true : false;
         return $scope.project.description = $sce.trustAsHtml($scope.project.description);
       });
+      Shadowbox.init();
+      Shadowbox.setup();
       return ga('send', 'pageview', {
         'page': '/projects/' + $routeParams.projectid,
         'title': $routeParams.projectid

@@ -5,19 +5,27 @@ portfolioApp = angular.module('portfolioApp',['smoothScroll','ngRoute','portfoli
 
 portfolioApp.directive('dnShadowbox', ->
   return {
-    template: '<a ng-click="openShadowbox()"><div class="thumbnail"><img ng-src="{{imageUrl}}"></div></a>',
+    restrict: "E",
+    template: '<a href="{{imageUrl}}" rel="shadowbox[Project]"><dn-thumb></dn-thumb></a>',
     scope: {
       imageName: '@name',
       imageUrl: '@url'
     },
-    link: (scope,element,attrs) ->
-      scope.openShadowbox = () ->
-        Shadowbox.open({
-          content: @imageUrl,
-          player: 'img',
-          gallery: 'Project'
-          title: @imageName
-        })
+  }
+)
+
+portfolioApp.directive('dnThumb', ->
+  return {
+    restrict: 'E',
+    template: '<div class="thumbnail"><img ng-src="{{imageUrl}}"></div>',
+    scope: false, # inherit from parent
+    link: (scope, element, attrs) ->
+      div = element.children() # the div in the template above
+      img = element.children().children() # the img in the template above
+      img.on('load', ->
+        heightDiff = img.height() - div.height()
+        img.css('margin-top',-heightDiff/2)
+      )
   }
 )
 
@@ -36,15 +44,15 @@ portfolioApp.config(['$routeProvider', ($routeProvider)->
 portfolioControllers = angular.module('portfolioControllers',[])
 
 portfolioControllers.controller('ProjectCtrl', ['$sce','$scope','$http','$routeParams', ($sce,$scope,$http,$routeParams) ->
-  #Shadowbox.init() # this is done in index.html
   $scope.projectid = $routeParams.projectid
   $http.get('projects/'+$routeParams.projectid+'/'+$routeParams.projectid+'.json').success((data) ->
     $scope.project = data
-    console.log(data)
     $scope.project.hasPhotos = if data.photos.length > 0 then true else false
     $scope.project.description = $sce.trustAsHtml($scope.project.description)
     # If it's possible to inject JSON, this is now a vulnerability.
   )
+  Shadowbox.init()
+  Shadowbox.setup()
   ga('send','pageview', {
     'page': '/projects/'+$routeParams.projectid,
     'title': $routeParams.projectid

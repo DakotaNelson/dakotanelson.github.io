@@ -29,8 +29,10 @@
   .thumbnail
   {
     width: 300px;
-    height: 300px;
+    height: 400px;
     overflow: hidden;
+    //border: 1px solid black;
+    //box-shadow: 5px 5px 15px 5px #7a7a7a;
   }
 
   .thumbnail img

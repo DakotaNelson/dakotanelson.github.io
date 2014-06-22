@@ -48,11 +48,12 @@
 				<article>
 					<header>
 						<h2>Photos</h2>
+            (Click for full image.)
 					</header>
 					<div class="container">
             <div class="row">
-              <div class="3u image" ng-repeat="photo in project.photos">
-                <a dn-shadowbox name="{{photo}}" url="projects/{{project.id}}/{{photo}}"></a>
+              <div class="3u" ng-repeat="photo in project.photos">
+                <dn-shadowbox class="shadowbox" name="{{photo}}" url="projects/{{project.id}}/{{photo}}"></dn-shadowbox>
               </div>
             </div>
 					</div>
