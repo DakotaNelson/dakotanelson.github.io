@@ -4,6 +4,6 @@
   "title_photo": "projects/this-site/thumb.jpg",
   "tagline": "You're looking right at it.",
   "subtitle": "A first adventure in AngularJS.",
-  "description": "I've always preferred to learn with projects - and this site is how I learned the basics of AngularJS. Despite the steep learning curve, I have to say - I think I've found a favorite framework. Feel free to take a look at <a href='http://github.com/DakotaNelson/dakotanelson.github.io'> this site's source on Github</a> if you're curious.",
+  "description": "I've always preferred to learn with projects - and this site is how I learned the basics of AngularJS. Despite the steep learning curve, I have to say - I think I've found a favorite framework. Feel free to take a look at <a href='http://github.com/DakotaNelson/dakotanelson.github.io' target='_blank'> this site's source on Github</a> if you're curious.",
   "photos": []
 }
