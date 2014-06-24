@@ -3,7 +3,7 @@
   "title": "CTD Sensor",
   "title_photo": "projects/ctd-sensor/thumb.jpg",
   "tagline": "The kind of electronics you drop in the lake on purpose.",
-  "subtitle": "Five college students and $100 is all it takes.",
-  "description": "For a circuits class final project, my team decided on a conductivity, temperature, and depth (CTD) sensor, sometimes called a sonde. While I assembled the sensor electronics and wrote the code, the team figured out how we were going to manage to drop a tube of electronics into a lake and still manage to sample conductivity, temperature, and pressure. With the help of lots of epoxy, we managed to assemble a working system. Check out our schematics and results below, or read the <a href=\"projects/ctd-sensor/RWM_Final_Project.pdf\">full PDF report</a>.",
+  "subtitle": "Five college students and $100.",
+  "description": "For a circuits class final project, my team decided on a conductivity, temperature, and depth (CTD) sensor, sometimes called a sonde. We sourced parts and whipped up a design, and while I assembled the sensor electronics and wrote the code, the team figured out how we were going to manage to drop a tube of electronics into a lake. With luck and lots of epoxy, we assembled a working system. Check out our results below, or read the <a href='projects/ctd-sensor/RWM_Final_Project.pdf'>full PDF report</a>.",
   "photos": ["with_buoy.jpg","circuit_top.jpg","circuit_front.jpg","circuit_side.jpg"]
 }

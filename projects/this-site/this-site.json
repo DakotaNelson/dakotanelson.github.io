@@ -2,8 +2,8 @@
   "id": "this-site",
   "title": "This Website",
   "title_photo": "projects/this-site/thumb.jpg",
-  "tagline": "This very website.",
-  "subtitle": "A second title.",
-  "description": "A bunch of words about the project.",
-  "photos": ["Coming soon.","There will be more.","And they will be good.","And whatnot."]
+  "tagline": "You're looking right at it.",
+  "subtitle": "A first adventure in AngularJS.",
+  "description": "I've always preferred to learn with projects - and this site is how I learned the basics of AngularJS. Despite the steep learning curve, I have to say - I think I've found a favorite framework. Feel free to take a look at <a href='http://github.com/DakotaNelson/dakotanelson.github.io'> this site's source on Github</a> if you're curious.",
+  "photos": []
 }

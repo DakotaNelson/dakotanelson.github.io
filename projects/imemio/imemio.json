@@ -2,8 +2,8 @@
   "id": "imemio",
   "title": "imem.io",
   "title_photo": "projects/imemio/thumb.jpg",
-  "tagline": "Watch ideas propogate through Twitter in real time.",
-  "subtitle": "Bringing a DARPA project to the commercial sphere.",
-  "description": "During my summer at Systems and Technology Research, my team's primary goal was to commercialize technology previously developed for a DARPA project.",
+  "tagline": "Bringing DARPA technology to the masses.",
+  "subtitle": "Twitter analysis from DARPA to you.",
+  "description": "Over the summer of 2014, I worked with two other Olin students at <a href='http:\/\/www.stresearch.com'>Systems and Technology Research</a> bringing a DARPA program to the civilian market. STR had developed a capability to do deep Twitter analysis, and the three of us were tasked with commercialization. Starting with a tool built for intelligence analysts, we identified a user group, stressed out about some design decisions, and rolled out iterative prototypes - with user tests and beta deploys in between, of course. We did everything from design and implementation of a new UI to backend additions, marketing, and customer relations - it was the full corporate startup experience, in one awesome summer.</p> <p>This project is still a work in progress, but will be live (and not password protected!) at <a href='http:\/\/imem.io'>imem.io</a> soon.",
   "photos": []
 }

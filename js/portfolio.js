@@ -67,7 +67,6 @@
         return $scope.project.description = $sce.trustAsHtml($scope.project.description);
       });
       Shadowbox.init();
-      Shadowbox.setup();
       return ga('send', 'pageview', {
         'page': '/projects/' + $routeParams.projectid,
         'title': $routeParams.projectid

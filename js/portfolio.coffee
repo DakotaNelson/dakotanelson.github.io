@@ -52,7 +52,6 @@ portfolioControllers.controller('ProjectCtrl', ['$sce','$scope','$http','$routeP
     # If it's possible to inject JSON, this is now a vulnerability.
   )
   Shadowbox.init()
-  Shadowbox.setup()
   ga('send','pageview', {
     'page': '/projects/'+$routeParams.projectid,
     'title': $routeParams.projectid
