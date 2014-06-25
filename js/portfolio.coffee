@@ -58,7 +58,7 @@ portfolioControllers.controller('ProjectCtrl', ['$sce','$scope','$http','$routeP
   })
 ])
 
-portfolioControllers.controller('IndexCtrl',['$scope','$http',($scope,$http)->
+portfolioControllers.controller('IndexCtrl',['$scope','$http','$timeout',($scope,$http,$timeout)->
   $http.get('projects/projects.json').success((data)->
     $scope.projects = data # NOTE: data must be an array consisting of subarrays of three projects each. Manually formatted because I'm lazy.
     for row in $scope.projects
@@ -67,7 +67,11 @@ portfolioControllers.controller('IndexCtrl',['$scope','$http',($scope,$http)->
         # Nested for loops are how you know you're doing it right.
   )
   ga('send','pageview', {
-    'page': '/index.html'
+    'page': '/index.html',
     'title': 'index'
   })
+  $timeout( ->
+    loadTime = window.performance.timing.domContentLoadedEventEnd- window.performance.timing.navigationStart
+    ga('send','timing','index','loadTime',loadTime, {'page':'/index.html','title':'index'})
+  ,3000)
   return])

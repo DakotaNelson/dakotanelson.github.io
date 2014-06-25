@@ -75,7 +75,7 @@
   ]);
 
   portfolioControllers.controller('IndexCtrl', [
-    '$scope', '$http', function($scope, $http) {
+    '$scope', '$http', '$timeout', function($scope, $http, $timeout) {
       $http.get('projects/projects.json').success(function(data) {
         var project, row, _i, _len, _ref, _results;
         $scope.projects = data;
@@ -99,6 +99,14 @@
         'page': '/index.html',
         'title': 'index'
       });
+      $timeout(function() {
+        var loadTime;
+        loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+        return ga('send', 'timing', 'index', 'loadTime', loadTime, {
+          'page': '/index.html',
+          'title': 'index'
+        });
+      }, 3000);
     }
   ]);
 
