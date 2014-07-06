@@ -6,11 +6,14 @@ portfolioApp = angular.module('portfolioApp',['smoothScroll','ngRoute','portfoli
 portfolioApp.directive('dnShadowbox', ->
   return {
     restrict: "E",
-    template: '<a href="{{imageUrl}}" rel="shadowbox[Project]"><dn-thumb></dn-thumb></a>',
+    template: '<a ng-click="sendPicClick()" href="{{imageUrl}}" rel="shadowbox[Project]"><dn-thumb></dn-thumb></a>',
     scope: {
       imageName: '@name',
       imageUrl: '@url'
     },
+    link: (scope,element,attrs) ->
+      scope.sendPicClick = () ->
+        ga('send', 'event', 'images', 'expand', @imageName)
   }
 )
 

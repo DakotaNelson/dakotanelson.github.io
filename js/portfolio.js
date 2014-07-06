@@ -10,10 +10,15 @@
   portfolioApp.directive('dnShadowbox', function() {
     return {
       restrict: "E",
-      template: '<a href="{{imageUrl}}" rel="shadowbox[Project]"><dn-thumb></dn-thumb></a>',
+      template: '<a ng-click="sendPicClick()" href="{{imageUrl}}" rel="shadowbox[Project]"><dn-thumb></dn-thumb></a>',
       scope: {
         imageName: '@name',
         imageUrl: '@url'
+      },
+      link: function(scope, element, attrs) {
+        return scope.sendPicClick = function() {
+          return ga('send', 'event', 'images', 'expand', this.imageName);
+        };
       }
     };
   });
