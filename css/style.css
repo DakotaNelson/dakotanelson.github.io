@@ -951,6 +951,12 @@
       position: absolute;
     }
 	
+    #nav ul.right
+    {
+      position: absolute;
+      right: 0px;
+    }
+	
 		#nav li
 		{
 			display: inline-block;
