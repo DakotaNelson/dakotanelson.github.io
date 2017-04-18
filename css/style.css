@@ -14,10 +14,6 @@ a {
   color: #bbbbbb;
 }
 
-p {
-  float: left;
-}
-
 #long-copy {
   width: 60%;
   margin: auto;
@@ -49,6 +45,7 @@ a.fa {
 }
 
 .title {
+  padding-bottom: 30px;
   width: 100%;
   text-align: center;
   font-size: 30px;
