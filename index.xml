@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Dakota Nelson</title>
+    <link>https://dakotanelson.com/</link>
+    <description>Recent content in Home on Dakota Nelson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Feb 2018 18:56:13 -0500</lastBuildDate>
+    
+	<atom:link href="https://dakotanelson.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tweets, Beats, and Sheets: C2 Over Social Media</title>
+      <link>https://dakotanelson.com/publications/tweets-beats-sheets/</link>
+      <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://dakotanelson.com/publications/tweets-beats-sheets/</guid>
+      <description>This webcast explains and demonstrates using sneaky-creeper to control a simple implant over several different third-part sites.
+  </description>
+    </item>
+    
+    <item>
+      <title>Social Media C2</title>
+      <link>https://dakotanelson.com/publications/social-media-c2/</link>
+      <pubDate>Mon, 10 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://dakotanelson.com/publications/social-media-c2/</guid>
+      <description>This talk at BSides Las Vegas 2015 covers Sneaky-creeper, a python library that allows for command and control over third-party sites such as Twitter, Tumblr, SalesForce, Google Sheets, and SoundCloud. The library is designed for ease of use, and has an API much like that of a standard &amp;ldquo;internet socket&amp;rdquo;-type library (except, of course, that the bits are flowing over third-party services).
+  
+There is a companion blog post to this talk here.</description>
+    </item>
+    
+    <item>
+      <title>Security of the Near Field Communication Protocol</title>
+      <link>https://dakotanelson.com/publications/nfc-security/</link>
+      <pubDate>Sun, 01 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://dakotanelson.com/publications/nfc-security/</guid>
+      <description>This paper, published my senior year of high school in the Journal of Computing Sciences in Colleges, gives an overview of near field communication (NFC) security.
+The abstract is:
+ With the booming of smartphone and wireless networks, contactless payment systems have been gradually accepted by a range of sectors and industries. Near Field Communication (NFC), as a de facto standard for radio communication, dominates this market and has accumulated many applications, such as use as a digital wallet and ticketing system, due to its convenience and versatility.</description>
+    </item>
+    
+    <item>
+      <title>The Empire Project</title>
+      <link>https://dakotanelson.com/projects/contributions/empire-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dakotanelson.com/projects/contributions/empire-project/</guid>
+      <description>As of June 2019, I&amp;rsquo;m the #8 contributor to Empire by commits. I&amp;rsquo;ve added several fairly major features, most notably the Empire plugin system, a complete overhaul of the system Empire uses to handle events and pass messages, and a new templating process using jinja that makes agents much easier to write.
+I also helped close a few issues, answer questions on GitHub, and generally be a positive member of the community.</description>
+    </item>
+    
+    <item>
+      <title>Monitoring Social Media in 5 Minutes a Week</title>
+      <link>https://dakotanelson.com/publications/monitoring-social-media/</link>
+      <pubDate>Sun, 10 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://dakotanelson.com/publications/monitoring-social-media/</guid>
+      <description>This talk at SOURCE Boston covers the design and use of pushpin-web, a python project which allows for collection of geotagged social media data from several different platforms in near real-time.
+  
+There is a companion project page for this talk here.</description>
+    </item>
+    
+    <item>
+      <title>Total Recoll</title>
+      <link>https://dakotanelson.com/publications/total-recoll/</link>
+      <pubDate>Thu, 10 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://dakotanelson.com/publications/total-recoll/</guid>
+      <description>This talk at the DEF CON 25 Recon Village covers Recoll, a full-text search tool which I&amp;rsquo;ve found to be incredibly useful.
+  
+There is a companion blog post to this talk here.</description>
+    </item>
+    
+    <item>
+      <title>Steganography: The Art and Science of Hiding Things in Other Things</title>
+      <link>https://dakotanelson.com/publications/steganography/</link>
+      <pubDate>Fri, 07 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://dakotanelson.com/publications/steganography/</guid>
+      <description>This series of blog posts introduces the reader to steganography, the practice of concealing a file, message, image, or video within another file, message, image, or video. It then builds on that foundation to introduce error correcting codes - specifically, Hamming codes - and some of the math behind it all.
+The sample code which formed the nucleus for this series was part of a class project for my discrete math class in college, and can be found on Github.</description>
+    </item>
+    
+    <item>
+      <title>Pushpin-Web</title>
+      <link>https://dakotanelson.com/projects/creations/pushpin-web/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://dakotanelson.com/projects/creations/pushpin-web/</guid>
+      <description>Social media permeates modern society. Whether it&amp;rsquo;s customers, competitors, or criminals, they&amp;rsquo;re broadcasting to the world - and to you, if you listen.
+Pushpin-web provides a simple and intuitive interface to keep an eye on social media around your real-world assets. While other platforms focus on marketing or branding with keyword-focused search, pushpin-web keeps its eyes on the physical world by collecting and displaying geotagged media near critical locations you designate.</description>
+    </item>
+    
+    <item>
+      <title>Sneaky-Creeper Social Media C2</title>
+      <link>https://dakotanelson.com/projects/creations/sneaky-creeper/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://dakotanelson.com/projects/creations/sneaky-creeper/</guid>
+      <description>Modern enterprises rely on third-party cloud services extensively. Do you monitor data uploaded to them? This trust can be abused to smuggle critical business data past perimeter defenses. Instead of building and maintaining custom infrastructure to control malicious software, attackers can simply rely on legitimate third parties to transport their data for them.
+Sneaky-creeper is an open-source project that allows security professionals to emulate the tactics of these advanced adversaries quickly and without expensive custom tools.</description>
+    </item>
+    
+    <item>
+      <title>Search Results</title>
+      <link>https://dakotanelson.com/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dakotanelson.com/search/</guid>
+      <description>This file exists solely to respond to /search URL with the related search layout template.
+No content shown here is rendered, all content is based in the template layouts/page/search.html
+Setting a very low sitemap priority will tell search engines this is not important content.
+This implementation uses Fusejs, jquery and mark.js
+Initial setup Search depends on additional output content type of JSON in config.toml
+[outputs] home = [&amp;quot;HTML&amp;quot;, &amp;quot;JSON&amp;quot;]  Searching additional fileds To search additional fields defined in front matter, you must add it in 2 places.</description>
+    </item>
+    
+  </channel>
+</rss>

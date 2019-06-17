@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Creations on Dakota Nelson</title>
+    <link>https://dakotanelson.com/projects/creations/</link>
+    <description>Recent content in Creations on Dakota Nelson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Feb 2018 12:41:05 -0500</lastBuildDate>
+    
+	<atom:link href="https://dakotanelson.com/projects/creations/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pushpin-Web</title>
+      <link>https://dakotanelson.com/projects/creations/pushpin-web/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://dakotanelson.com/projects/creations/pushpin-web/</guid>
+      <description>Social media permeates modern society. Whether it&amp;rsquo;s customers, competitors, or criminals, they&amp;rsquo;re broadcasting to the world - and to you, if you listen.
+Pushpin-web provides a simple and intuitive interface to keep an eye on social media around your real-world assets. While other platforms focus on marketing or branding with keyword-focused search, pushpin-web keeps its eyes on the physical world by collecting and displaying geotagged media near critical locations you designate.</description>
+    </item>
+    
+    <item>
+      <title>Sneaky-Creeper Social Media C2</title>
+      <link>https://dakotanelson.com/projects/creations/sneaky-creeper/</link>
+      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      
+      <guid>https://dakotanelson.com/projects/creations/sneaky-creeper/</guid>
+      <description>Modern enterprises rely on third-party cloud services extensively. Do you monitor data uploaded to them? This trust can be abused to smuggle critical business data past perimeter defenses. Instead of building and maintaining custom infrastructure to control malicious software, attackers can simply rely on legitimate third parties to transport their data for them.
+Sneaky-creeper is an open-source project that allows security professionals to emulate the tactics of these advanced adversaries quickly and without expensive custom tools.</description>
+    </item>
+    
+  </channel>
+</rss>

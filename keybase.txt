@@ -1,0 +1,83 @@
+==================================================================
+https://keybase.io/dakota
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://dakotanelson.com
+  * I am dakota (https://keybase.io/dakota) on keybase.
+  * I have a public key with fingerprint 7FA5 A43B BF2B AD18 45C8  D0E8 145F CCD9 8996 8E3B
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.7"
+        },
+        "key": {
+            "fingerprint": "7fa5a43bbf2bad1845c8d0e8145fccd989968e3b",
+            "host": "keybase.io",
+            "key_id": "145FCCD989968E3B",
+            "uid": "b2c03f7e6a98dcfeb568cd82d3de6919",
+            "username": "dakota"
+        },
+        "merkle_root": {
+            "ctime": 1427952362,
+            "hash": "7f344e56da2bd840ac4bb3b69cc2481c2f55717cc482be647eca238deeb27b97f884924f94b6f9857bbfed34538a21c7c98a11627dd1a0ea350d2abc8c36a56f",
+            "seqno": 188255
+        },
+        "service": {
+            "hostname": "dakotanelson.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1427952425,
+    "expire_in": 157680000,
+    "prev": "b8b635905fbc33edf1ff5c74399a2d6a25cde77b54c61d5dfcf00f2f8d9e7a32",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2
+
+owFVkn1MVWUcx4EAlRIoQUIR8bCxKHY77+c5IPmCb4Rgmmykwr3P24Ejl3Mu515R
+FJipgaAiamPLhrHKVYYzJ7iFiAVF9ELmSKeN7C5fkLa0sFVbRp1DtvL56zzn93m+
+z/f7+z0t0x8KCQuNc39xpbG1OSv08zEUUpg0nL6NQSapZjK3MdirUyPgfBmwgjKZ
+TDmtRtBPXbqZYpiEujb6U+4zGUwVtfy6adgU61JcClOb4eDOYU03Sqnls3RHi1E0
+KEFRQEjjESQcECUMCEsBJ0oaxkQFqioDKiBbssz0Bx64lZnUdOvE/mvzy3JylvzD
+LxUW27VNkwXEY1bQFCpDFRCsUSTJABPAE4FQWeVUB/RT634kAsvNAHTcVlCr3Evd
+lmlORsYB3QE4kVdUiRdk3vYD/WWTCQRRpJJMII8IEFmIRYQEJKsY8yLgMK9JksIp
+GIuAR1QWFYohLwBCKeIVpCoaAKLKi5oqIllTgaTYvaBEECUBQJ7DClYB5DiZVwjh
+IEuhILGEhwgDLMhQkjU7gJ9WGqZtDgBekmqdvVWlY+r4dpr2QDaDev2m4cJmhX3Q
+Z5kBE5teu1oWCPgyneCBap9Db6YnkPu+kBvpBrHH9v+5cjb6YFNEXspg6BafblG3
+7hCSIgPWXs49tMqZBUCyIKmspCEsCJRonKZJWBEFVYU8kSEvYUIVBUkiljkiEQ1r
+LKvxGiAqVaDA/xdVsH3CUlvSr5caMLDJokxtY1hSeEhoWEhkRJjzcEOipsX++5ov
+JMX8VVQhTs9Zd8V9Mb2j5amtfaFXU9P2LT11enjZ6pquRWufW5kSCGduljYU7rp2
+Z8bh6OPtEbO/C1fV63ny1bI/I1LVwxtu97bGHHs6fnSo/vXLczYQD27vpbuKX9sZ
+/mVZ/rrzoc3bjchXeuDZ8dw1oqUc3PzMR3PnSfURcfJ6JffOzZOjlUPg28hpBy4t
+2iuyayL3VM5PnVpidM8vINchfeHha61K9/7I9Z6El+4xdfqRmiWuM1ULGjz1JY8W
++6acPnhh+870hLD9wceiJ9rnDf7c8emOvN1sp+zqWxdftSLv95xTBSDtLLjRea41
+fWLokbFraZ9E3f546ImZHYXJQtLBsF+DUn5fBLEqumKvemtuJcbl9iSNrp2Fjo6n
+HeN6zPRY4+vm9qa3Tr8bVTI39MBUT/ZXl6vPJtcthDUrixN37Iia6Wubt/DEJa7N
+l+p9MrrjQ43Nfu/QioH+wg86i78viX7+zb1HRsZ+CiYntGT5K2LMow1FY3P6c/SW
+mq19niWr6/bciJ/1eFrt4c92drXmDb8Y252QsDhI9ewp3qyR5dfLm87cyumO7Z2x
+YOuVH4N1XduOe4dLEs9TVDJ7vGnBFk/2YE/68IQrGLSSfhs4WTQ9/8AvucvP3X35
+UI/8TWXzqz8wXXcGNj67auSNxv62As/g+8f7U4r+aOs7Jd5dtfudtxvvlc0ZuDi3
+/sbf
+=AYba
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dakota
+
+==================================================================
+

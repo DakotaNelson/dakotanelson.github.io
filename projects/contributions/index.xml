@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Source Contributions on Dakota Nelson</title>
+    <link>https://dakotanelson.com/projects/contributions/</link>
+    <description>Recent content in Open Source Contributions on Dakota Nelson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dakotanelson.com/projects/contributions/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Empire Project</title>
+      <link>https://dakotanelson.com/projects/contributions/empire-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dakotanelson.com/projects/contributions/empire-project/</guid>
+      <description>As of June 2019, I&amp;rsquo;m the #8 contributor to Empire by commits. I&amp;rsquo;ve added several fairly major features, most notably the Empire plugin system, a complete overhaul of the system Empire uses to handle events and pass messages, and a new templating process using jinja that makes agents much easier to write.
+I also helped close a few issues, answer questions on GitHub, and generally be a positive member of the community.</description>
+    </item>
+    
+  </channel>
+</rss>
