@@ -15,6 +15,7 @@
   <url>
     <loc>http://dakotanelson.com/posts/</loc>
     <lastmod>2019-09-30T17:42:52-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -25,16 +26,13 @@
   <url>
     <loc>http://dakotanelson.com/categories/</loc>
     <lastmod>2019-09-30T17:42:52-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://dakotanelson.com/categories/development/</loc>
     <lastmod>2019-09-30T17:42:52-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://dakotanelson.com/tags/development/</loc>
-    <lastmod>2019-09-30T17:42:52-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -43,38 +41,51 @@
   </url>
   
   <url>
+    <loc>http://dakotanelson.com/tags/</loc>
+    <lastmod>2019-09-30T17:42:52-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://dakotanelson.com/tags/development/</loc>
+    <lastmod>2019-09-30T17:42:52-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://dakotanelson.com/tags/go/</loc>
     <lastmod>2019-09-30T17:42:52-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://dakotanelson.com/categories/golang/</loc>
     <lastmod>2019-09-30T17:42:52-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://dakotanelson.com/tags/golang/</loc>
     <lastmod>2019-09-30T17:42:52-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://dakotanelson.com/tags/hugo/</loc>
     <lastmod>2019-09-30T17:42:52-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://dakotanelson.com/tags/</loc>
-    <lastmod>2019-09-30T17:42:52-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://dakotanelson.com/tags/templates/</loc>
     <lastmod>2019-09-30T17:42:52-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://dakotanelson.com/tags/themes/</loc>
     <lastmod>2019-09-30T17:42:52-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -120,6 +131,7 @@
   <url>
     <loc>http://dakotanelson.com/docs/</loc>
     <lastmod>2019-10-04T17:27:13-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>
