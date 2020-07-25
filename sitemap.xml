@@ -103,6 +103,11 @@
   </url>
   
   <url>
+    <loc>http://dakotanelson.com/docs/me/interests/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://dakotanelson.com/docs/me/media/</loc>
     <priority>0</priority>
   </url>
