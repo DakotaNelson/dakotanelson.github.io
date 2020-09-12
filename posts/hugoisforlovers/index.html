@@ -7,10 +7,10 @@
 <title>Getting Started with Hugo | Dakota Nelson</title>
 
 
-<link rel="stylesheet" href="/book.min.89885fa0429ec73067282f26fc0c6d38cfc617a443ec4e835d47b821c52c6e92.css" integrity="sha256-iYhfoEKexzBnKC8m/AxtOM/GF6RD7E6DXUe4IcUsbpI=">
+<link rel="stylesheet" href="/book.min.d6e01e122033ce2a7f4ba3471d4e045ec8f5e41dfe29688bf42ed9da10b7ef47.css" integrity="sha256-1uAeEiAzzip/S6NHHU4EXsj15B3&#43;KWiL9C7Z2hC370c=">
 
 
-<script defer src="/search.min.661441533e3dabf930b451a411729072805daa4e77ffdb842b691020875ca593.js" integrity="sha256-ZhRBUz49q/kwtFGkEXKQcoBdqk53/9uEK2kQIIdcpZM="></script>
+<script defer src="/search.min.dedc07fa3c9426b983c6185e5928ff94e56e751b9c0ed3ff8b4ba905895565fe.js" integrity="sha256-3twH&#43;jyUJrmDxhheWSj/lOVudRucDtP/i0upBYlVZf4="></script>
 
 
 
@@ -59,22 +59,41 @@ https://github.com/alex-shpak/hugo-book
   </style>
 
 <ul>
-<li><strong>This Site</strong></li>
-<li><a href="/docs/this-site/inspiration/">Inspiration</a></li>
-<li><strong>Me</strong></li>
-<li><a href="/docs/me/interests/">Interests</a></li>
-<li><a href="/docs/me/programming/">Programming</a></li>
-<li><a href="/docs/me/art/">Art</a></li>
-<li><a href="/docs/me/books/">Reading</a></li>
-<li><a href="/docs/me/coursera/">Coursera</a></li>
-<li><a href="/docs/me/experience/">Experience</a></li>
-
-<li><p><a href="/docs/me/media/">Talks, Papers, etc.</a></p></li>
-
-<li><p><a href="/docs/me/contact/">Contact</a></p></li>
+<li>
+<p><strong>This Site</strong></p>
+</li>
+<li>
+<p><a href="/docs/this-site/inspiration/">Inspiration</a></p>
+</li>
+<li>
+<p><strong>Me</strong></p>
+</li>
+<li>
+<p><a href="/docs/me/interests/">Interests</a></p>
+</li>
+<li>
+<p><a href="/docs/me/programming/">Programming</a></p>
+</li>
+<li>
+<p><a href="/docs/me/art/">Art</a></p>
+</li>
+<li>
+<p><a href="/docs/me/books/">Reading</a></p>
+</li>
+<li>
+<p><a href="/docs/me/coursera/">Coursera</a></p>
+</li>
+<li>
+<p><a href="/docs/me/experience/">Experience</a></p>
+</li>
+<li>
+<p><a href="/docs/me/media/">Talks, Papers, etc.</a></p>
+</li>
+<li>
+<p><a href="/docs/me/contact/">Contact</a></p>
+</li>
 </ul>
-
-<!--- [Blog](/posts/)-->
+<!-- raw HTML omitted -->
 
 
 
@@ -113,33 +132,22 @@ https://github.com/alex-shpak/hugo-book
     <strong>April 2, 2014</strong>
   </h5>
 </header>
-<article class="markdown">
-
-<h2 id="step-1-install-hugo">Step 1. Install Hugo</h2>
-
+<article class="markdown"><h2 id="step-1-install-hugo">Step 1. Install Hugo</h2>
 <p>Go to <a href="https://github.com/spf13/hugo/releases">Hugo releases</a> and download the
 appropriate version for your OS and architecture.</p>
-
 <p>Save it somewhere specific as we will be using it in the next step.</p>
-
 <p>More complete instructions are available at <a href="https://gohugo.io/getting-started/installing/">Install Hugo</a></p>
-
 <h2 id="step-2-build-the-docs">Step 2. Build the Docs</h2>
-
 <p>Hugo has its own example site which happens to also be the documentation site
 you are reading right now.</p>
-
 <p>Follow the following steps:</p>
-
 <ol>
 <li>Clone the <a href="http://github.com/spf13/hugo">Hugo repository</a></li>
 <li>Go into the repo</li>
 <li>Run hugo in server mode and build the docs</li>
-<li>Open your browser to <a href="http://localhost:1313">http://localhost:1313</a></li>
+<li>Open your browser to http://localhost:1313</li>
 </ol>
-
 <p>Corresponding pseudo commands:</p>
-
 <pre><code>git clone https://github.com/spf13/hugo
 cd hugo
 /path/to/where/you/installed/hugo server --source=./docs
@@ -149,15 +157,10 @@ cd hugo
 &gt; Web Server is available at http://localhost:1313
 &gt; Press ctrl+c to stop
 </code></pre>
-
 <p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
-
 <h2 id="step-3-change-the-docs-site">Step 3. Change the docs site</h2>
-
 <p>Stop the Hugo process by hitting Ctrl+C.</p>
-
 <p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
-
 <pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
 &gt; 29 pages created
 &gt; 0 tags index created
@@ -166,30 +169,22 @@ cd hugo
 &gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
 &gt; Press ctrl+c to stop
 </code></pre>
-
 <p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
 content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
-
 <p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
 are located at the same relative location as the url, in our case
 <code>docs/content/overview/quickstart.md</code>.</p>
-
 <p>Change and save this file.. Notice what happened in your terminal.</p>
-
 <pre><code>&gt; Change detected, rebuilding site
 
 &gt; 29 pages created
 &gt; 0 tags index created
 &gt; in 26 ms
 </code></pre>
-
 <p>Refresh the browser and observe that the typo is now fixed.</p>
-
 <p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building. I double dare you.
 Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p>
-
 <h2 id="step-4-have-fun">Step 4. Have fun</h2>
-
 <p>The best way to learn something is to play with it.</p>
 </article>
 
@@ -215,15 +210,12 @@ Having nearly instant feedback enables you to have your creativity flow without 
 
   <aside class="book-toc level-4 fixed">
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#step-1-install-hugo">Step 1. Install Hugo</a></li>
-<li><a href="#step-2-build-the-docs">Step 2. Build the Docs</a></li>
-<li><a href="#step-3-change-the-docs-site">Step 3. Change the docs site</a></li>
-<li><a href="#step-4-have-fun">Step 4. Have fun</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#step-1-install-hugo">Step 1. Install Hugo</a></li>
+    <li><a href="#step-2-build-the-docs">Step 2. Build the Docs</a></li>
+    <li><a href="#step-3-change-the-docs-site">Step 3. Change the docs site</a></li>
+    <li><a href="#step-4-have-fun">Step 4. Have fun</a></li>
+  </ul>
 </nav>
   </aside>
 

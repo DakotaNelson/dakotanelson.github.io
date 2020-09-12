@@ -48,12 +48,12 @@
   </url>
   
   <url>
-    <loc>http://dakotanelson.com/categories/golang/</loc>
+    <loc>http://dakotanelson.com/tags/golang/</loc>
     <lastmod>2019-09-30T17:42:52-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dakotanelson.com/tags/golang/</loc>
+    <loc>http://dakotanelson.com/categories/golang/</loc>
     <lastmod>2019-09-30T17:42:52-07:00</lastmod>
   </url>
   
@@ -79,12 +79,12 @@
   
   <url>
     <loc>http://dakotanelson.com/docs/me/art/</loc>
-    <priority>0</priority>
+    <lastmod>2019-10-04T17:27:13-07:00</lastmod>
   </url>
   
   <url>
     <loc>http://dakotanelson.com/docs/me/books/</loc>
-    <priority>0</priority>
+    <lastmod>2020-09-12T08:30:31-06:00</lastmod>
   </url>
   
   <url>
@@ -94,42 +94,42 @@
   
   <url>
     <loc>http://dakotanelson.com/docs/me/coursera/</loc>
-    <priority>0</priority>
+    <lastmod>2020-09-12T08:30:31-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://dakotanelson.com/docs/me/experience/</loc>
-    <priority>0</priority>
+    <lastmod>2020-09-12T08:30:31-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://dakotanelson.com/docs/me/interests/</loc>
-    <priority>0</priority>
+    <lastmod>2020-08-26T07:45:32-07:00</lastmod>
   </url>
   
   <url>
     <loc>http://dakotanelson.com/docs/me/media/</loc>
-    <priority>0</priority>
+    <lastmod>2019-10-04T17:27:13-07:00</lastmod>
   </url>
   
   <url>
     <loc>http://dakotanelson.com/docs/me/programming/</loc>
-    <priority>0</priority>
+    <lastmod>2020-01-03T16:43:55-08:00</lastmod>
   </url>
   
   <url>
     <loc>http://dakotanelson.com/docs/this-site/inspiration/</loc>
-    <priority>0</priority>
+    <lastmod>2019-10-04T17:27:13-07:00</lastmod>
   </url>
   
   <url>
     <loc>http://dakotanelson.com/</loc>
-    <lastmod>2019-11-13T19:58:03-08:00</lastmod>
+    <lastmod>2020-09-12T08:32:46-06:00</lastmod>
   </url>
   
   <url>
     <loc>http://dakotanelson.com/docs/</loc>
-    <lastmod>2020-01-03T16:43:55-08:00</lastmod>
+    <lastmod>2020-09-12T08:30:31-06:00</lastmod>
   </url>
   
 </urlset>
